@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>类型选择器</p>
+    <p id="ids">id选择器</p>
+    <p class="ids">class选择器</p>
+    <!-- class选择器:和id主要区别在于，id每页只能应用一次，而class可以根据需要在页面上使用多次。 -->
+    <div id="ids">
+        <p class="ids">后代<em>选择器</em></p>
+    </div>
+</body>
+
+</html>
+<style>
+    /* 类型选择器 */
+    p {
+        color: red;
+        font-size: 130%;
+    }
+
+    /* id选择器 */
+    #ids {
+        color: green;
+    }
+    /* 类选择器 */
+    .ids {
+        color: blue;
+    }
+    /* 后代选择器 */
+    #ids .ids em{
+        color:pink;
+    }
+</style>
